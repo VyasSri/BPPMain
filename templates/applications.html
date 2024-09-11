@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Real World Applications</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block cv" style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="work-experience group">
+                    <div class="heading">
+                        <h2 class="text-center">Real world applications</h2>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Cutting Stock Problem</h3>
+                            </div>
+                        </div>
+                        <p>In industries such as metal, paper, and textile, long sheets must be cut into smaller pieces to minimize waste. Bin Packing correlates heavily with this as the goal is to waste the least amount of space while gaining the most value.&nbsp;</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Cargo Containers</h3>
+                            </div>
+                        </div>
+                        <p>Packing materials into trucks while considering both space available and weight capacity illustrates the 2-dimensional packing problem perfectly.&nbsp; Algorithms that provide the greatest efficiency are usually implemented in these types of scenarios.&nbsp;</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Supply Chain Management</h3>
+                            </div>
+                        </div>
+                        <p>Vehicle routing for delivery trucks, space optimization in a warehouse, and cargo loading all align with the main objectives of problems such as the cutting stock problem, the vehicle routing problem, and the knapsack/bin packing problem. An example of a company that uses this is Amazon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="text-center"><strong>COMPUTER APPLICATIONS</strong>&nbsp;</h2>
+        <section class="portfolio-block cv" style="padding-top: 0px;">
+            <div class="container">
+                <div class="work-experience group">
+                    <div class="heading"></div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Data Streams</h3>
+                            </div>
+                        </div>
+                        <p>Allocating bandwidth to efficiently stream data to the right sources is also another real-world instance of the 1-dimensional problem. Algorithms that combine a blend of speed and efficiency work best in these scenarios</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Computers</h3>
+                            </div>
+                        </div>
+                        <p>Allocating tasks to high-performance computers is a prime example of Bin Packing. By determining the resource requirements, such as time to execute and memory, we can minimize the overall space while maximizing the time taken, leading to optimal performance</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Computer Hardware</h3>
+                            </div>
+                        </div>
+                        <p>Computer hardware is actually a form of Bin Packing! Allocating the right components to the right spaces can help minimize interference and increase the computer's performance.&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

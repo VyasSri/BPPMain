@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"><img src="../static/img/BPP/DALL·E%202024-08-13%2022.46.25%20-%20A%20visually%20appealing%20and%20abstract%20representation%20of%20the%20bin%20packing%20problem%20for%20a%20website%20homepage.%20The%20image%20features%20multiple%20bins%20(rectangles)%20of%20t.webp"></div>
+                <div class="about-me">
+                    <p>Bin Packing is an optimization/heuristics problem that deals with placing items in containers(bins) based on certain criteria regarding capacity and item sizes.</p><a class="btn btn-outline-primary" role="button" href="/applications">Learn more about its applications here</a>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block photography">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2>What this site contains</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Overview</h3>
+                                <p class="card-text">Learn more about the various types of bin packing and their functions, including algorithms in various programming languages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Applications</h3>
+                                <p class="card-text">Bin Packing is very applicable in the real world. Learn about its real world applications</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Interactive Demo</h3>
+                                <p class="card-text">The best way to learn is to try all the possible combinations. This interactive page will give you a detailed step by step overview </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

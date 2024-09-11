@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>First Fit</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>First Fit</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-left: 12px;margin-left: -2px;">
+                        <h3>Description</h3>
+                        <p>The <strong>First Fit (FF)</strong> algorithm is a bin-packing heuristic where each item is placed into the first available bin that has enough remaining space to accommodate it. If no existing bin can hold the item, a new bin is opened. This algorithm can be implemented in O(n^2) time or improved to O(n log⁡n)with more sophisticated data structures. Although First Fit does not always yield the optimal number of bins, it is guaranteed to use no more than 1.7M bins, where M represents the number of bins in the optimal solution.</p>
+                    </div>
+                    <div class="col"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/WXw0OM_Dpvo" width="560" height="315" style="margin-top: 0px;"></iframe>
+                        <p>Learn More about First Fit in this video!</p><code></code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Worst Fit</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>Worst fit</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-left: 12px;margin-left: -2px;">
+                        <h3>Description</h3>
+                        <p>The <strong>Worst Fit (WF)</strong> algorithm works by placing each item into the bin where it will leave the most remaining space, attempting to keep the bins as balanced as possible. If no bin can accommodate the item, a new bin is opened. While Worst Fit shares a similar time complexity with First Fit and Best Fit, it typically underperforms in practice, often leading to underutilized bins.</p>
+                        <p></p>
+                    </div>
+                    <div class="col"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/--l5UD3adik" width="560" height="315" style="margin-top: 0px;"></iframe>
+                        <p></p>
+                        <p>Learn more about Worst Fit Here!</p><code></code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Best Fit</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>Best fit</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-left: 12px;margin-left: -2px;">
+                        <h3>Description</h3>
+                        <p>The <strong>Best Fit (BF)</strong> algorithm, on the other hand, places each item into the bin where it will leave the least remaining space, essentially trying to fit the item as tightly as possible. If the item cannot fit into any of the existing bins, a new bin is opened. Like First Fit, Best Fit can also be implemented in O(nlogn) time. Best Fit generally performs better than First Fit in terms of minimizing the number of bins used, but it still does not guarantee an optimal solution.</p>
+                        <p></p>
+                    </div>
+                    <div class="col"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/vUxhAmfXs2o" width="560" height="315" style="margin-top: 0px;"></iframe>
+                        <p>Learn More about Best Fit in this video! Skip to 3:30</p><code></code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

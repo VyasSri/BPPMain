@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Demonstration</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <h2>Bin Packing Demonstration</h2>
+                    {% if success_msg %}
+                            <div class="alert alert-success">{{ success_msg }}</div>
+                        {% endif %}
+                        {% if error_msg %}
+                            <div class="alert alert-danger">{{ error_msg }}</div>
+                        {% endif %}
+                </div>
+                <form method="POST" class="border rounded border-0 shadow-lg p-3 p-md-5" data-bs-theme="light">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label" for="id_algorithm">Choose your algorithm</label>
+                        {{ form.algorithm }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="id_bin_capacity">Bin Capacity</label>
+                        {{ form.bin_capacity }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="id_item_list">List of Items (format: 10, 20, 30, ...)</label>
+                        {{ form.item_list }}
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary shadow d-block w-100" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

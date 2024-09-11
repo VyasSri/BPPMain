@@ -1,0 +1,42 @@
+ {% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Next Fit</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>Next fit</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-left: 12px;margin-left: -2px;">
+                        <h3>Description</h3>
+                        <p>The <strong>Next Fit (NF)</strong> algorithm places each item into the current bin if it fits; otherwise, it closes that bin and starts a new one. Unlike the other heuristics, Next Fit does not revisit previously opened bins. This algorithm is the simplest to implement, with a time complexity of O(n). However, its efficiency is lower, as it can use up to twice as many bins as the optimal solution. It is designed to be very fast at the expense of efficiency.&nbsp;</p>
+                        <p></p>
+                    </div>
+                    <div class="col"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/UlZNtqRcUM4" width="560" height="315" style="margin-top: 0px;"></iframe>
+                        <p></p>
+                        <p>Learn more about Worst Fit Here! Skip to 2:20 for a better experience!</p><code></code>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BPP At a Glance</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../static/css/pikaday.min.css">
+</head>
+{% block content %}
+<body>
+    <main class="page">
+        <section class="portfolio-block">
+            <div class="container">
+                <div class="heading">
+                    <h2>Bin Packing at a Glance</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>First Fit</h3>
+                            <h4></h4><a class="btn btn-outline-primary btn-sm" role="button" href="/FF">Learn more about First Fit Here</a>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>Next Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/NF">Learn more about Next Fit Here</a>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>Worst Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/WF">Learn more about Worst Fit Here</a>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>Best Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/BF">Learn more about Best Fit Here</a>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/pikaday.min.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+{% endblock %}
+</html>
