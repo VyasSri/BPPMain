@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="../static/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="../static/css/pikaday.min.css">
+    <style>
+        .project-card-no-image {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-card-no-image h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .project-card-no-image .btn {
+            margin: auto;
+        }
+    </style>
 </head>
 {% block content %}
 <body>
@@ -19,30 +35,30 @@
                 <div class="heading">
                     <h2>Bin Packing at a Glance</h2>
                 </div>
+                <!-- Single row with 4 smaller cards -->
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project-card-no-image">
                             <h3>First Fit</h3>
-                            <h4></h4><a class="btn btn-outline-primary btn-sm" role="button" href="/FF">Learn more about First Fit Here</a>
-                            <div class="tags"></div>
+                            <a class="btn btn-outline-primary btn-sm d-flex justify-content-center" role="button" href="/FF">Learn more about First Fit Here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project-card-no-image">
-                            <h3>Next Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/NF">Learn more about Next Fit Here</a>
-                            <div class="tags"></div>
+                            <h3>Next Fit</h3>
+                            <a class="btn btn-outline-primary btn-sm d-flex justify-content-center" role="button" href="/NF">Learn more about Next Fit Here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project-card-no-image">
-                            <h3>Worst Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/WF">Learn more about Worst Fit Here</a>
-                            <div class="tags"></div>
+                            <h3>Worst Fit</h3>
+                            <a class="btn btn-outline-primary btn-sm d-flex justify-content-center" role="button" href="/WF">Learn more about Worst Fit Here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project-card-no-image">
-                            <h3>Best Fit</h3><a class="btn btn-outline-primary btn-sm" role="button" href="/BF">Learn more about Best Fit Here</a>
-                            <div class="tags"></div>
+                            <h3>Best Fit</h3>
+                            <a class="btn btn-outline-primary btn-sm d-flex justify-content-center" role="button" href="/BF">Learn more about Best Fit Here</a>
                         </div>
                     </div>
                 </div>
